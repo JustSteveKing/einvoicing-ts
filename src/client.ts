@@ -20,7 +20,7 @@ import type {
 export const DEFAULT_BASE_URL = "https://api.einvoicing.dev";
 
 /** This client's version, sent in the User-Agent. */
-export const VERSION = "0.1.0";
+export const VERSION = "0.1.1";
 
 /**
  * Just the part of fetch this client uses.
