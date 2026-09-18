@@ -12,6 +12,9 @@
   ],
   "homepage": "https://www.einvoicing.dev",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Steve McDougall (https://www.juststeveking.com)",
   "type": "module",
   "sideEffects": false,
