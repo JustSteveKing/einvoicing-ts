@@ -1,0 +1,33 @@
+{
+  "name": "@einvoicing/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript client for the einvoicing.dev API: validate, convert and look up Peppol e-invoices.",
+  "keywords": ["peppol", "e-invoicing", "en16931", "ubl", "vat", "invoice"],
+  "homepage": "https://www.einvoicing.dev",
+  "license": "MIT",
+  "author": "Steve McDougall (https://www.juststeveking.com)",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "check": "tsc --noEmit && bun test",
+    "test": "bun test",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  }
+}
